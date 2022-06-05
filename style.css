@@ -1,0 +1,693 @@
+body, html {
+    overflow-x: hidden;
+}
+body {
+    min-width: 320px;
+    font-family: CiscoSans,Arial,sans-serif;
+    color: #424445;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    background: #f2f2f2;
+}
+img {
+    display: block;
+    width: 90%;
+}
+h1, h2, h3, h4 {
+    font-weight: 300;
+}
+h3 {
+    font-size: 40px;
+}
+p {
+    font-size: 26px;
+}
+a {
+    color: #424445;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: block; }
+.flex {
+    display: flex;
+}
+.grey-bg {
+    background-color: #e2e2e2;
+}
+.button {
+    display: block;
+    width: fit-content;
+    margin: 60px auto 20px;
+    padding: 30px 60px;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #0d274d;
+    text-decoration: none;
+    text-align: center;
+}
+.main-container {
+    max-width: 1600px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+    min-width: 0;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 12%);
+}
+.side-title {
+    display: block;
+    width: fit-content;
+    font-size: 33px;
+    background-color: #fff;
+    border-radius: 70px;
+    border: 2px solid #0d274d;
+    text-decoration: none;
+    text-align: center;
+}
+.side-title.left {
+    text-align: left;
+    margin: 0px 0px 50px -80px;
+    padding: 30px 60px 30px 150px;
+}
+.side-title.right {
+    float: right;
+    text-align: left;
+    margin: 0px -80px;
+    padding: 30px 150px 30px 60px;
+}
+.side-title > .larger {
+    font-size: 40px;
+}
+
+/* Hero */
+.hero {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.hero > h1 {
+    width: 600px;
+    margin: 80px auto;
+    font-size: 72px;
+    text-align: center;
+}
+.hero > img {
+    margin: 0 auto 100px;
+}
+/* Intro */
+.intro > .flex {
+    max-width: 1340px;
+    margin: 40px auto 100px;
+    padding: 0 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.intro > .flex.one > div > h2 {
+    margin: 40px 0 0;
+    font-size: 65px;
+}
+.intro > .flex > div > p {
+    margin: 10px 0 0;
+    font-size: 22px;
+}
+.intro-text {
+    width: 40%;
+    margin-right: 50px;
+}
+.intro > .flex > img {
+    width: 60%;
+    margin-right: 50px;
+}
+.intro > .flex > .progress-circle-div {
+    width: 518px;
+    height: max-content;
+    padding-bottom: 40px;
+}
+.quote {
+    margin: 0px 0px 60px;
+    padding: 60px;
+    font-size: 33px;
+    text-align: center;
+}
+.intro > .flex.two > img {
+    max-width: 460px;
+    margin-right: 0px;
+}
+.intro > .flex.two > div > h2 {
+    font-size: 100px;
+}
+.intro > .flex.two > div > p {
+    font-size: 26px;
+}
+#container {
+    position: relative;
+    margin: 0 0 -430px 12px;
+    width: 383px;
+    height: 383px;
+}
+.progress-circle-div > img {
+    position: relative;
+    max-width: 460px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+/* Benefits */
+.benefits {
+    padding-bottom: 80px;
+}
+.benefits > div > h3 {
+    font-size: 44px;
+}
+.benefits > img {
+    width: 35%;
+    margin: 80px auto;
+}
+.benefits > .flex {
+    max-width: 1340px;
+    margin: 20px auto;
+    padding: 0 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+.benefits > .flex > img {
+    max-width: fit-content;
+    max-height: 250px;
+}
+.benefits > .flex > div {
+    width: 55%;
+}
+
+/* How */
+.how > .flex {
+    max-width: 1340px;
+    margin: 0 auto 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.how > .flex > div {
+    margin: 0 30px;
+}
+.number-one.flex {
+    align-items: center;
+    justify-content: center;
+}
+.number-one > h2 {
+    font-size: 77px;
+    margin: 30px 0px;
+}
+.number-one > p {
+    font-size: 28px;
+    margin: 0px;
+}
+.how > .flex > div > img {
+    max-height: 390px;
+    margin: auto;
+}
+
+/* Choose */
+.location.flex {
+    margin: 50px auto 30px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.location.flex > div {
+    width: 25%;
+}
+.location.flex > div > img {
+    width: 75px;
+    margin: auto;
+}
+.choose > div > div > h2 {
+    font-size: 46px;
+}
+.choose > div {
+    max-width: 1000px;
+    margin: 0px auto;
+}
+.choose > img {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.choose > .flex.two {
+    position: relative;
+    margin-top: -550px;
+    padding: 0 3%;
+    justify-content: space-around;
+}
+.choose > .flex > .one,
+.choose > .flex > .two {
+    width: 40%;
+}
+.choose > .flex > .two {
+    text-align: right;
+}
+.choose > .cloud {
+    display: grid;
+    max-width: 35%;
+    width: 400px;
+    height: fit-content;
+    margin: 0px auto;
+    text-align: center;
+}
+.choose > .cloud > img {
+    margin: auto;
+}
+.cloud > p {
+    margin-top: -100px;
+}
+.choose > h3 {
+    margin: 70px auto 0px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+/* Outro */
+.outro {
+    max-width: 1340px;
+    margin: 0 auto;
+    text-align: center;
+}
+.outro > h3 {
+    margin-top: 60px;
+}
+.outro > .smaller {
+    font-size: 22px;
+}
+
+/* Footnotes */
+.footnotes {
+    margin-top: 60px;
+    padding: 40px 0;
+}
+.footnotes > div {
+    max-width: 1340px;
+    width: 90%;
+    margin: 0px auto;
+}
+.footnotes > div > p {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        background-color: #0d274d;
+    }
+    .outro,
+    .choose > div,
+    .choose > img {
+        max-width: 868px;
+    }
+    .choose > .flex.two {
+        margin-top: -500px;
+    }
+    .choose > .cloud {
+        width: 350px;
+    }
+    .choose > h3 {
+        margin: 50px auto 0px;
+    }
+    .cloud > p {
+        margin-top: -90px;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    body {
+        background-color: pink;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 22px;
+    }
+    .side-title {
+        font-size: 30px;
+    }
+    .side-title > .larger {
+        font-size: 35px;
+    }
+    .side-title.left {
+        padding: 20px 50px 20px 140px;
+    }
+    .side-title.right {
+        padding: 20px 140px 20px 50px;
+    }
+    .hero > h1 {
+        font-size: 60px;
+    }
+    .intro > .flex > img {
+        width: 50%;
+    }
+    #container {
+        margin: 50px 0 -295px 2px;
+        width: 270px;
+        height: 270px;
+    }
+    #animate-stats2 {
+        height: 450px;
+    }
+    .intro > .flex > .progress-circle-div {
+        width: 350px;
+        height: 400px;
+        padding-bottom: 0px;
+    }
+    .progress-circle-div > img {
+        max-width: 360px;
+    }
+    .intro > .flex.one > div > h2 {
+        margin: 20px 0 0;
+        font-size: 50px;
+    }
+    .intro > .flex {
+        margin: 40px auto 50px;
+    }
+    .intro > .flex.two > div > h2 {
+        font-size: 70px;
+        margin: 10px 0px;
+    }
+    .intro > .flex > div {
+        padding-bottom: 0px;
+    }
+    .benefits > img {
+        width: 50%;
+    }
+    .benefits > .flex > img {
+        max-height: 150px;
+    }
+    .benefits > .flex {
+        padding: 0 7%;
+    }
+    .number-one > h2 {
+        font-size: 55px;
+        margin: 15px 0px;
+    }
+    .number-one > p {
+        font-size: 24px;
+    }
+    .location.flex > div > img {
+        width: 55px;
+    }
+    .location.flex > div {
+        width: 30%;
+    }
+    .location.one > div > p {
+        font-size: 22px;
+    }
+    .choose > .flex.two {
+        margin-top: -360px;
+    }
+    .choose > div > div > h2 {
+        margin: 20px 0 10px;
+        font-size: 35px;
+    }
+    .flex > .one > p,
+    .flex > .two > p {
+        margin: 0px;
+    }
+    .cloud > p {
+        margin-top: -65px;
+    }
+    .choose > h3 {
+        margin: 45px auto 0px;
+        font-size: 28px;
+    }
+    .button {
+        margin: 40px auto 20px;
+        padding: 20px 50px;
+        font-size: 25px;
+    }
+    .outro > .smaller {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    body {
+        background-color: yellow;
+    }
+    p {
+        font-size: 20px;
+    }
+    .hero > h1 {
+        max-width: 550px;
+        font-size: 50px;
+    }
+    .intro > .flex {
+        margin: 40px auto 70px;
+        flex-direction: column;
+    }
+    .intro > .flex.two {
+        flex-direction: column-reverse;
+    }
+    .intro-text,
+    .intro > .flex > img,
+    .intro > .flex > .progress-circle-div {
+        width: 70%;
+        margin-right: 0px;
+    }
+    .intro > .flex > .progress-circle-div {
+        height: 340px;
+    }
+    .intro > .flex > div {
+        margin-top: 20px;
+        padding: 0 60px;
+        text-align: center;
+    }
+    .intro-text {
+        width: 430px;
+    }
+    #container {
+        margin: 50px 0 -318px 14px;
+    }
+    #animate-stats2 {
+        height: 535px;
+    }
+    .choose > .flex.two {
+        margin-top: -280px;
+    }
+    .choose > div > div > h2 {
+        font-size: 28px;
+    }
+    .flex > .one > p, .flex > .two > p {
+        font-size: 18px;
+    }
+    .cloud > p {
+        margin-top: -55px;
+        font-size: 18px;
+    }
+    .choose > h3 {
+        margin: 20px auto 0px;
+        font-size: 20px;
+    }
+    .outro > h3 {
+        margin-bottom: 10px;
+    }
+    .button {
+        font-size: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 596px) {
+    body {
+        background-color: green;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .side-title {
+        font-size: 25px;
+    }
+    .side-title > .larger {
+        font-size: 30px;
+    }
+    .side-title.right {
+        padding: 20px 100px 20px 50px;
+    }
+    .side-title.left {
+        padding: 20px 50px 20px 100px;
+    }
+    .hero > h1 {
+        max-width: 450px;
+        font-size: 40px;
+    }
+    .intro > .flex.two > div > p {
+        font-size: 22px;
+    }
+    .intro > .flex > div {
+        padding: 0;
+    }
+    .progress-circle-div > img {
+        margin: 62px 0px 0px 45px;
+    }
+    .quote {
+        font-size: 25px;
+    }
+    .benefits > .flex > img {
+        max-height: 130px;
+    }
+    .benefits > .flex > div {
+        width: 50%;
+    }
+    .benefits {
+        padding-bottom: 40px;
+    }
+    .benefits > .flex {
+        padding: 0 5%;
+    }
+    .how > .flex {
+        margin: 0 20px 50px;
+    }
+    .how > .flex > div {
+        margin: 0px;
+    }
+    .number-one > h2 {
+        font-size: 35px;
+    }
+    .number-one > p {
+        font-size: 18px;
+    }
+    .location.flex {
+        margin: 30px auto;
+    }
+    .location.one > div > p {
+        font-size: 16px;
+    }
+    .location.flex > div {
+        width: 32%;
+    }
+    .location.flex > div > img {
+        width: 40px;
+    }
+    .choose > .flex.two {
+        margin-top: -250px;
+    }
+    .choose > .cloud {
+        width: 150px;
+    }
+    .cloud > p {
+        margin-top: -45px;
+    }
+    .choose > h3 {
+        margin: 2px auto 0px;
+        padding-bottom: 40px;
+    }
+    .outro > h3 {
+        margin-top: 40px;
+    }
+    .outro > .smaller {
+        font-size: 18px;
+    }
+    .footnotes {
+        margin-top: 40px;
+        padding: 30px 0;
+    }
+    .footnotes > div {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 486px) {
+    body {
+        background-color: rebeccapurple;
+    }
+    img {
+        width: 95%;
+    }
+    p {
+        font-size: 18px;
+    }
+    .button {
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+    .side-title.left {
+        margin: 0px 0px 30px -80px;
+    }
+    .hero > h1 {
+        max-width: 350px;
+        margin: 60px auto 40px;
+        font-size: 35px;
+    }
+    .hero > img {
+        margin: 0 auto 60px;
+    }
+    .intro > .flex > div {
+        padding: 0 40px;
+    }
+    .intro > .flex.two > div > h2 {
+        font-size: 55px;
+    }
+    .intro-text {
+        width: 350px;
+    }
+    .intro > .flex.two > div > p,
+    .intro > .flex > div > p {
+        margin: 10px 0 0;
+        font-size: 18px;
+    }
+    .intro > .flex > .progress-circle-div{
+        width: 285px;
+    }
+    .side-title {
+        font-size: 22px;
+    }
+    .side-title > .larger {
+        font-size: 24px;
+    }
+    .benefits > img {
+        width: 60%;
+        margin: 40px auto;
+    }
+    .benefits > .flex > div {
+        width: 55%;
+    }
+    .benefits > .flex > img {
+        max-height: 100px;
+    }
+    .how > .flex {
+        margin: 0 10px 20px;
+    }
+    .number-one > p {
+        font-size: 16px;
+    }
+    .location.flex > div {
+        width: 33%;
+    }
+    .choose > .flex.two {
+        margin-top: -210px;
+    }
+    .choose > .flex > .one, .choose > .flex > .two {
+        width: 44%;
+    }
+    .choose > div > div > h2 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    .flex > .one > p, .flex > .two > p {
+        font-size: 16px;
+    }
+    .choose > h3 {
+        font-size: 16px;
+    }
+    .choose > .cloud {
+        width: 130px;
+    }
+    .cloud > p {
+        margin-top: -41px;
+        font-size: 16px;
+    }
+    .outro > .smaller {
+        font-size: 16px;
+    }
+}
