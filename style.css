@@ -98,8 +98,73 @@ a {
     font-size: 72px;
     text-align: center;
 }
-.hero > img {
+.hero-image {
+    width: 1200px;
     margin: 0 auto 100px;
+}
+.check {
+    position: relative;
+    width: 50px;
+    bottom: 435px;
+    left: 820px;
+}
+.chat-message-content {
+	position: relative;
+	width: 55px;
+    z-index: 0;
+    bottom: 465px;
+    left: 279px;
+}
+:root {
+	--loader-size: 0.7rem;
+	--loader-spacing: 0.5rem;
+	--loader-background: rgba(0, 0, 0, .1);
+	--loader-background-active: #0D274D;
+	--loader-animation-duration: 1.2s;
+}
+.loader {
+	position: relative;
+	margin-left: calc(var(--loader-spacing) + var(--loader-size));
+	margin-right: calc(var(--loader-spacing) + var(--loader-size));
+	animation-delay: calc(var(--loader-animation-duration) / 3);
+}
+.loader,
+.loader::before,
+.loader::after {
+	display: inline-block;
+	width: var(--loader-size);
+	height: var(--loader-size);
+	background: var(--loader-background);
+	border-radius: 100%;
+	animation-name: loader;
+	animation-duration: var(--loader-animation-duration);
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.loader::before,
+.loader::after {
+	content: '';
+	position: absolute;
+	top: 0;
+}
+.loader::before {
+	left: calc((var(--loader-spacing) + var(--loader-size)) * -1);
+}
+.loader::after {
+	right: calc((var(--loader-spacing) + var(--loader-size)) * -1);
+	animation-delay: calc(var(--loader-animation-duration) / 3 * 2);
+}
+@keyframes loader {
+	0%,
+	66%,
+	100% {
+		transform: translateY(10%);
+		background: var(--loader-background);
+	}
+	33% {
+		transform: translateY(-25%);
+		background: var(--loader-background-active);
+	}
 }
 /* Intro */
 .intro > .flex {
@@ -297,10 +362,45 @@ a {
 .footnotes > div > p {
     font-size: 14px;
 }
+@media only screen and (max-width: 1375px) {
+    .hero {
+        width: 1100px;
+    }
+    .hero-image {
+        width: 1000px;
+    }
+    .check {
+        width: 40px;
+        bottom: 370px;
+        left: 687px;
+    }
+    .chat-message-content {
+        width: 55px;
+        bottom: 410px;
+        left: 224px;
+    }
+    :root {
+        --loader-size: 0.6rem;
+        --loader-spacing: 0.4rem;
+    }
+}
 
 @media only screen and (max-width: 1100px) {
-    body {
-        background-color: #0d274d;
+    .hero {
+        width: 995px;
+    }
+    .hero-image {
+        width: 900px;
+    }
+    .check {
+        width: 35px;
+        bottom: 340px;
+        left: 620px;
+    }
+    .chat-message-content {
+        width: 55px;
+        bottom: 385px;
+        left: 203px;
     }
     .outro,
     .choose > div,
@@ -322,9 +422,6 @@ a {
 }
 
 @media only screen and (max-width: 995px) {
-    body {
-        background-color: pink;
-    }
     h3 {
         font-size: 35px;
     }
@@ -345,6 +442,26 @@ a {
     }
     .hero > h1 {
         font-size: 60px;
+    }
+    .hero {
+        width: 700px;
+    }
+    .hero-image {
+        width: 650px;
+    }
+    .check {
+        width: 35px;
+        bottom: 280px;
+        left: 435px;
+    }
+    .chat-message-content {
+        width: 30px;
+        bottom: 319px;
+        left: 137px;
+    }
+    :root {
+        --loader-size: 0.45rem;
+        --loader-spacing: 0.25rem;
     }
     .intro > .flex > img {
         width: 50%;
@@ -432,15 +549,32 @@ a {
     }
 }
 @media only screen and (max-width: 720px) {
-    body {
-        background-color: yellow;
-    }
     p {
         font-size: 20px;
     }
     .hero > h1 {
         max-width: 550px;
         font-size: 50px;
+    }
+    .hero {
+        width: 550px;
+    }
+    .hero-image {
+        width: 500px;
+    }
+    .check {
+        width: 30px;
+        bottom: 240px;
+        left: 340px;
+    }
+    .chat-message-content {
+        width: 30px;
+        bottom: 277px;
+        left: 110px;
+    }
+    :root {
+        --loader-size: 0.4rem;
+        --loader-spacing: 0.2rem;
     }
     .intro > .flex {
         margin: 40px auto 70px;
@@ -499,9 +633,6 @@ a {
 }
 
 @media only screen and (max-width: 596px) {
-    body {
-        background-color: green;
-    }
     h3 {
         font-size: 30px;
     }
@@ -516,6 +647,26 @@ a {
     }
     .side-title.left {
         padding: 20px 50px 20px 100px;
+    }
+    .hero {
+        width: 400px;
+    }
+    .hero-image {
+        width: 350px;
+    }
+    .check {
+        width: 25px;
+        bottom: 200px;
+        left: 247px;
+    }
+    .chat-message-content {
+        width: 30px;
+        bottom: 239px;
+        left: 86px;
+    }
+    :root {
+        --loader-size: 0.25rem;
+        --loader-spacing: 0.1rem;
     }
     .hero > h1 {
         max-width: 450px;
@@ -598,9 +749,6 @@ a {
 }
 
 @media only screen and (max-width: 486px) {
-    body {
-        background-color: rebeccapurple;
-    }
     img {
         width: 95%;
     }
