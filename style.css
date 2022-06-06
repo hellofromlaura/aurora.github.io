@@ -137,48 +137,56 @@ a {
     margin-top: -53px;
     margin-left: 45px;
     animation : fall 0.94s linear 0.69s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-1 > .rain > .rain-2 {
     width: 7px;
     margin-top: 30px;
     margin-left: 63px;
     animation : fall 0.98s linear 0.57s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-1 > .rain > .rain-3 {
     width: 20px;
     margin-top: -107px;
     margin-left: 122px;
     animation : fall 0.66s linear .60s infinite;
+    animation-iteration-count: 7;
 }
 .hero-cloud-1 > .rain > .rain-4 {
     width: 25px;
     margin-top: -40px;
     margin-left: 182px;
     animation : fall 0.69s linear .76s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-1 > .rain > .rain-5 {
     width: 27px;
     margin-top: -38px;
     margin-left: 222px;
     animation : fall 0.75s linear .56s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-1 > .rain > .rain-6 {
     width: 23px;
     margin-top: -34px;
     margin-left: 242px;
     animation : fall 0.75s linear .92s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-1 > .rain > .rain-7 {
     width: 26px;
     margin-top: -20px;
     margin-left: 300px;
     animation : fall 0.92s linear .72s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-1 > .rain > .rain-8 {
     width: 19px;
     margin-top: 5px;
     margin-left: 335px;
     animation : fall 0.84s linear .99s infinite;
+    animation-iteration-count: 5;
 }
 /* hero cloud 2 */
 .contain.hero-cloud-2 {
@@ -199,42 +207,49 @@ a {
     margin-top: -12px;
     margin-left: 29px;
     animation : fall .79s linear .53s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-2 > .rain > .rain-2 {
     width: 5px;
     margin-top: 20px;
     margin-left: 35px;
     animation : fall .82s linear .97s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-2 > .rain > .rain-9 {
     width: 17px;
     margin-top: -25px;
     margin-left: 41px;
     animation : fall .75s linear .56s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-2 > .rain > .rain-10 {
     width: 19px;
     margin-top: -74px;
     margin-left: 76px;
     animation : fall .60s linear .59s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-2 > .rain > .rain-4 {
     width: 17px;
     margin-top: -46px;
     margin-left: 126px;
     animation : fall .5s linear .5s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-2 > .rain > .rain-11 {
     width: 20px;
     margin-top: -54px;
     margin-left: 140px;
     animation : fall .80s linear .63s infinite;
+    animation-iteration-count: 5;
 }
 .hero-cloud-2 > .rain > .rain-8 {
     width: 16px;
     margin-top: -26px;
     margin-left: 170px;
     animation : fall .68s linear .75s infinite;
+    animation-iteration-count: 5;
 }
 @keyframes fall {
 	to {margin-top:150px; opacity:0;}
@@ -516,6 +531,95 @@ a {
     .hero-image {
         width: 1000px;
     }
+    .hero-over {
+        width: 1000px;
+        margin: -418px auto 0px;
+    }
+    .hero-clouds {
+        width: 343px;
+    }
+    .contain.hero-cloud-1 {
+        margin-top: -704px;
+        margin-left: 190px;
+    }
+    .hero-cloud-1 > .rain {
+        margin-top: -50px;
+        margin-left: -30px;
+    }
+    .hero-cloud-1 > .rain > .rain-1 {
+        width: 19px;
+        margin-left: 65px;
+    }
+    .hero-cloud-1 > .rain > .rain-2 {
+        width: 6px;
+        margin-left: 92px;
+        margin-top: 10px;
+    }
+    .hero-cloud-1 > .rain > .rain-3 {
+        width: 17px;
+        margin-left: 132px;
+    }
+    .hero-cloud-1 > .rain > .rain-4 {
+        width: 22px;
+    }
+    .hero-cloud-1 > .rain > .rain-5 {
+        width: 24px;
+        margin-left: 212px;
+    }
+    .hero-cloud-1 > .rain > .rain-6 {
+        width: 20px;
+        margin-left: 226px;
+    }
+    .hero-cloud-1 > .rain > .rain-7 {
+        width: 23px;
+        margin-left: 281px;
+        margin-top: -21px;
+    }
+    .hero-cloud-1 > .rain > .rain-8 {
+        width: 17px;
+        margin-left: 311px;
+        margin-top: -9px;
+    }
+    .contain.hero-cloud-2 {
+        margin-top: -719px;
+        margin-left: 726px;
+    }
+    .hero-cloud {
+        width: 185px;
+    }
+    .hero-cloud-2 > .rain {
+        margin-top: -14px;
+    }
+    .hero-cloud-2 > .rain > .rain-1 {
+        width: 14px;
+        margin-top: -25px;
+        margin-left: 26px;
+    }
+    .hero-cloud-2 > .rain > .rain-2 {
+        width: 4px;
+        margin-top: 7px;
+        margin-left: 37px;
+    }
+    .hero-cloud-2 > .rain > .rain-9 {
+        width: 15px;
+    }
+    .hero-cloud-2 > .rain > .rain-10 {
+        width: 17px;
+        margin-left: 67px;
+    }
+    .hero-cloud-2 > .rain > .rain-4 {
+        width: 15px;
+        margin-left: 109px;
+    }
+    .hero-cloud-2 > .rain > .rain-11 {
+        width: 16px;
+        margin-left: 119px;
+    }
+    .hero-cloud-2 > .rain > .rain-8 {
+        width: 13px;
+        margin-top: -33px;
+        margin-left: 144px;
+    }
     .check {
         width: 40px;
         bottom: 370px;
@@ -538,6 +642,94 @@ a {
     }
     .hero-image {
         width: 900px;
+    }
+    .hero-over {
+        width: 900px;
+        margin: -386px auto 0px;
+    }
+    .contain.hero-cloud-1 {
+        margin-top: -644px;
+        margin-left: 174px;
+    }
+    .hero-clouds {
+        width: 308px;
+    }
+    .hero-cloud-1 > .rain {
+        margin-top: -37px;
+        margin-left: -44px;
+    }
+    .hero-cloud-1 > .rain > .rain-1 {
+        width: 16px;
+        margin-left: 79px;
+    }
+    .hero-cloud-1 > .rain > .rain-2 {
+        width: 5px;
+        margin-top: 3px;
+    }
+    .hero-cloud-1 > .rain > .rain-3 {
+        width: 16px;
+        margin-top: -104px;
+        margin-left: 136px;
+    }
+    .hero-cloud-1 > .rain > .rain-4 {
+        width: 20px;
+        margin-left: 178px;
+    }
+    .hero-cloud-1 > .rain > .rain-5 {
+        width: 19px;
+        margin-left: 211px;
+    }
+    .hero-cloud-1 > .rain > .rain-6 {
+        width: 16px;
+        margin-left: 227px;
+    }
+    .hero-cloud-1 > .rain > .rain-7 {
+        width: 20px;
+        margin-left: 270px;
+        margin-top: -28px;
+    }
+    .hero-cloud-1 > .rain > .rain-8 {
+        width: 16px;
+        margin-left: 294px;
+        margin-top: -19px;
+    }
+    .contain.hero-cloud-2 {
+        margin-top: -656px;
+        margin-left: 657px;
+    }
+    .hero-cloud {
+        width: 165px;
+    }
+    .hero-cloud-2 > .rain {
+        margin-top: -7px;
+    }
+    .hero-cloud-2 > .rain > .rain-1 {
+        width: 12px;
+        margin-top: -25px;
+        margin-left: 23px;
+    }
+    .hero-cloud-2 > .rain > .rain-2 {
+        margin-top: 3px;
+    }
+    .hero-cloud-2 > .rain > .rain-9 {
+        width: 13px;
+        margin-left: 36px;
+    }
+    .hero-cloud-2 > .rain > .rain-10 {
+        width: 16px;
+        margin-left: 60px;
+    }
+    .hero-cloud-2 > .rain > .rain-4 {
+        width: 14px;
+        margin-left: 95px;
+    }
+    .hero-cloud-2 > .rain > .rain-11 {
+        width: 15px;
+        margin-left: 106px;
+    }
+    .hero-cloud-2 > .rain > .rain-8 {
+        margin-top: -36px;
+        margin-left: 129px;
     }
     .check {
         width: 35px;
@@ -595,6 +787,101 @@ a {
     }
     .hero-image {
         width: 650px;
+    }    .hero-clouds {
+        /* opacity: 0.5; */
+    }
+    .hero-over {
+        width: 650px;
+        margin: -306px auto 0px;
+    }
+    .contain.hero-cloud-1 {
+        margin-top: -493px;
+        margin-left: 116px;
+    }
+    .hero-clouds {
+        width: 222px;
+    }
+    .hero-cloud-1 > .rain {
+        margin-top: -15px;
+        margin-left: -75px;
+    }
+    .hero-cloud-1 > .rain > .rain-1 {
+        width: 12px;
+        margin-left: 100px;
+    }
+    .hero-cloud-1 > .rain > .rain-2 {
+        width: 4px;
+    }
+    .hero-cloud-1 > .rain > .rain-3 {
+        width: 11px;
+        margin-top: -81px;
+        margin-left: 142px;
+    }
+    .hero-cloud-1 > .rain > .rain-4 {
+        width: 14px;
+        margin-left: 173px;
+    }
+    .hero-cloud-1 > .rain > .rain-5 {
+        width: 15px;
+        margin-left: 196px;
+    }
+    .hero-cloud-1 > .rain > .rain-6 {
+        width: 12px;
+        margin-left: 207px;
+    }
+    .hero-cloud-1 > .rain > .rain-7 {
+        width: 15px;
+        margin-left: 238px;
+        margin-top: -32px;
+    }
+    .hero-cloud-1 > .rain > .rain-8 {
+        width: 11px;
+        margin-left: 259px;
+        margin-top: -20px;
+    }
+    .contain.hero-cloud-2 {
+        margin-top: -502px;
+        margin-left: 465px;
+    }
+    .hero-cloud {
+        width: 119px;
+        /* opacity: 0.5; */
+    }
+    .hero-cloud-2 > .rain {
+        margin-top: 2px;
+        margin-left: -21px;
+    }
+    .hero-cloud-2 > .rain > .rain-1 {
+        width: 9px;
+        margin-top: -24px;
+        margin-left: 37px;
+    }
+    .hero-cloud-2 > .rain > .rain-2 {
+        width: 3px;
+        margin-top: -5px;
+    }
+    .hero-cloud-2 > .rain > .rain-9 {
+        width: 10px;
+        margin-left: 46px;
+    }
+    .hero-cloud-2 > .rain > .rain-10 {
+        width: 11px;
+        margin-top: -57px;
+        margin-left: 63px;
+    }
+    .hero-cloud-2 > .rain > .rain-4 {
+        width: 9px;
+        margin-left: 89px;
+    }
+    .hero-cloud-2 > .rain > .rain-11 {
+        width: 11px;
+        margin-left: 96px;
+        margin-top: -51px;
+    }
+    .hero-cloud-2 > .rain > .rain-8 {
+        width: 9px;
+        margin-top: -32px;
+        margin-left: 114px;
     }
     .check {
         width: 35px;
