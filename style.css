@@ -42,6 +42,7 @@ a {
 }
 .button {
     display: block;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 60px auto 20px;
     padding: 30px 60px;
@@ -64,6 +65,7 @@ a {
 }
 .side-title {
     display: block;
+    width: -moz-fit-content;
     width: fit-content;
     font-size: 33px;
     background-color: #fff;
@@ -89,6 +91,7 @@ a {
 
 /* Hero */
 .hero {
+    display: grid;
     max-width: 1340px;
     margin: 0 auto;
 }
@@ -102,6 +105,145 @@ a {
     width: 1200px;
     margin: 0 auto 100px;
 }
+.hero-over {
+    position: relative;
+    width: 1200px;
+    margin: -482px auto 0px
+}
+.contain {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.rain > img {
+    position: inherit;
+}
+/* hero cloud 1 */
+.contain.hero-cloud-1{
+    margin-top: -824px;
+    margin-left: 239px;
+}
+.hero-clouds {
+    position: relative;
+    width: 409px;
+    z-index: 10;
+}
+.hero-cloud-1 > .rain {
+    position: absolute;
+    margin-top: -81px;
+}
+.hero-cloud-1 > .rain > .rain-1 {
+    width: 23px;
+    margin-top: -53px;
+    margin-left: 45px;
+    animation : fall 0.94s linear 0.69s infinite;
+}
+.hero-cloud-1 > .rain > .rain-2 {
+    width: 7px;
+    margin-top: 30px;
+    margin-left: 63px;
+    animation : fall 0.98s linear 0.57s infinite;
+}
+.hero-cloud-1 > .rain > .rain-3 {
+    width: 20px;
+    margin-top: -107px;
+    margin-left: 122px;
+    animation : fall 0.66s linear .60s infinite;
+}
+.hero-cloud-1 > .rain > .rain-4 {
+    width: 25px;
+    margin-top: -40px;
+    margin-left: 182px;
+    animation : fall 0.69s linear .76s infinite;
+}
+.hero-cloud-1 > .rain > .rain-5 {
+    width: 27px;
+    margin-top: -38px;
+    margin-left: 222px;
+    animation : fall 0.75s linear .56s infinite;
+}
+.hero-cloud-1 > .rain > .rain-6 {
+    width: 23px;
+    margin-top: -34px;
+    margin-left: 242px;
+    animation : fall 0.75s linear .92s infinite;
+}
+.hero-cloud-1 > .rain > .rain-7 {
+    width: 26px;
+    margin-top: -20px;
+    margin-left: 300px;
+    animation : fall 0.92s linear .72s infinite;
+}
+.hero-cloud-1 > .rain > .rain-8 {
+    width: 19px;
+    margin-top: 5px;
+    margin-left: 335px;
+    animation : fall 0.84s linear .99s infinite;
+}
+/* hero cloud 2 */
+.contain.hero-cloud-2 {
+    margin-top: -841px;
+    margin-left: 884px;
+}
+.hero-cloud-2 > .rain {
+    position: absolute;
+    margin-top: -31px;
+}
+.hero-cloud {
+    position: relative;
+    width: 217px;
+    z-index: 10;
+}
+.hero-cloud-2 > .rain > .rain-1 {
+    width: 16px;
+    margin-top: -12px;
+    margin-left: 29px;
+    animation : fall .79s linear .53s infinite;
+}
+.hero-cloud-2 > .rain > .rain-2 {
+    width: 5px;
+    margin-top: 20px;
+    margin-left: 35px;
+    animation : fall .82s linear .97s infinite;
+}
+.hero-cloud-2 > .rain > .rain-9 {
+    width: 17px;
+    margin-top: -25px;
+    margin-left: 41px;
+    animation : fall .75s linear .56s infinite;
+}
+.hero-cloud-2 > .rain > .rain-10 {
+    width: 19px;
+    margin-top: -74px;
+    margin-left: 76px;
+    animation : fall .60s linear .59s infinite;
+}
+.hero-cloud-2 > .rain > .rain-4 {
+    width: 17px;
+    margin-top: -46px;
+    margin-left: 126px;
+    animation : fall .5s linear .5s infinite;
+}
+.hero-cloud-2 > .rain > .rain-11 {
+    width: 20px;
+    margin-top: -54px;
+    margin-left: 140px;
+    animation : fall .80s linear .63s infinite;
+}
+.hero-cloud-2 > .rain > .rain-8 {
+    width: 16px;
+    margin-top: -26px;
+    margin-left: 170px;
+    animation : fall .68s linear .75s infinite;
+}
+@keyframes fall {
+	to {margin-top:150px; opacity:0;}
+}
+
+@keyframes mover {
+    0% { transform: translateY(1rem); }
+    100% { transform: translateY(2.6rem); }
+}
 .check {
     position: relative;
     width: 50px;
@@ -110,7 +252,8 @@ a {
 }
 .chat-message-content {
 	position: relative;
-	width: 55px;
+    width: -moz-fit-content;
+    width: fit-content;
     z-index: 0;
     bottom: 465px;
     left: 279px;
@@ -167,6 +310,9 @@ a {
 	}
 }
 /* Intro */
+/* .content-body {
+    position: relative;
+} */
 .intro > .flex {
     max-width: 1340px;
     margin: 40px auto 100px;
@@ -243,6 +389,7 @@ a {
     align-items: center;
 }
 .benefits > .flex > img {
+    max-width: -moz-fit-content;
     max-width: fit-content;
     max-height: 250px;
 }

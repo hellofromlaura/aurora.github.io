@@ -22,8 +22,6 @@ const counterAnimation = (el, initialNum, finalNum, speed) => {
     }
 }
 
-
-
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -35,10 +33,18 @@ function isInViewport(el) {
     );
 }
 
+var bar = new ProgressBar.Circle(container, {
+    strokeWidth: 7,
+    easing: 'easeInOut',
+    duration: 1400,
+    color: '#11BAE9',
+    trailColor: '#E2E2E2',
+    trailWidth: 7,
+    svgStyle: null
+});
 
 const box1 = document.querySelector('#animate-stats1');
 const box2 = document.querySelector('#animate-stats2');
-
 
 document.addEventListener('scroll', function () {
     if (isInViewport(box1) && document.querySelector('#nbr1').innerHTML == 0 ) {
@@ -48,19 +54,6 @@ document.addEventListener('scroll', function () {
     }
     if (isInViewport(box2) && document.querySelector('#nbr4').innerHTML == 0 ) {
         counterAnimation(document.querySelector('#nbr4'), 0, 60, 20);
+        bar.animate(0.6);  // Number from 0.0 to 1.0
     }
-    
-
 });
-
-var bar = new ProgressBar.Circle(container, {
-    strokeWidth: 7,
-    easing: 'easeInOut',
-    duration: 1400,
-    color: '#11BAE9',
-    trailColor: '#E2E2E2',
-    trailWidth: 7,
-    svgStyle: null
-  });
-  
-  bar.animate(0.6);  // Number from 0.0 to 1.0
