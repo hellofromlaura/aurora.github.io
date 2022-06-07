@@ -445,10 +445,14 @@ a {
     margin: 0px;
 }
 .how > .flex > div > img {
-    max-height: 390px;
-    width: 117%;
-    margin: auto;
     transform: scaleX(-1);
+    height: 442px;
+}
+.puzzle-div.right > img {
+    margin-left: -67px;
+}
+.puzzle-div.left > img {
+    margin-right: -106px;
 }
 
 /* Choose */
@@ -463,7 +467,7 @@ a {
 }
 .location.flex > div > img {
     width: 75px;
-    margin: auto;
+    margin: 10px auto 0px;
 }
 .choose > div > div > h2 {
     font-size: 46px;
@@ -656,6 +660,15 @@ a {
         --loader-size: 0.6rem;
         --loader-spacing: 0.4rem;
     }
+    .how > .flex > div > img {
+        height: 422px;
+    }
+    .puzzle-div.right > img {
+        margin-left: -63px;
+    }
+    .puzzle-div.left > img {
+        margin-right: -102px;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -780,6 +793,15 @@ a {
     }
     .cloud > p {
         margin-top: -90px;
+    }
+    .how > .flex > div > img {
+        height: 330px;
+    }
+    .puzzle-div.right > img {
+        margin-left: -50px;
+    }
+    .puzzle-div.left > img {
+        margin-right: -79px;
     }
 }
 
@@ -994,6 +1016,15 @@ a {
         margin: 45px auto 0px;
         font-size: 28px;
     }
+    .how > .flex > div > img {
+        height: 260px;
+    }
+    .puzzle-div.right > img {
+        margin-left: -39px;
+    }
+    .puzzle-div.left > img {
+        margin-right: -62px;
+    }
     .btn {
         margin: 40px auto 20px;
         padding: 20px 50px;
@@ -1177,6 +1208,15 @@ a {
         margin: 20px auto 0px;
         font-size: 20px;
     }
+    .how > .flex > div > img {
+        height: 200px;
+    }
+    .puzzle-div.right > img {
+        margin-left: -30px;
+    }
+    .puzzle-div.left > img {
+        margin-right: -48px;
+    }
     .outro > h3 {
         margin-bottom: 10px;
     }
@@ -1339,6 +1379,7 @@ a {
     }
     .benefits > .flex {
         padding: 0 5%;
+        margin-top: 50px;
     }
     .how > .flex {
         margin: 0 20px 50px;
@@ -1376,6 +1417,15 @@ a {
     .choose > h3 {
         margin: 2px auto 0px;
         padding-bottom: 40px;
+    }
+    .how > .flex > div > img {
+        height: 160px;
+    }
+    .puzzle-div.right > img {
+        margin-left: -23px;
+    }
+    .puzzle-div.left > img {
+        margin-right: -39px;
     }
     .outro > h3 {
         margin-top: 40px;
@@ -1505,8 +1555,6 @@ a {
         margin-top: -20px;
         margin-left: 97px;
     }
-    
-    
     .hero > h1 {
         max-width: 350px;
         margin: 60px auto 40px;
@@ -1561,10 +1609,20 @@ a {
         width: 55%;
     }
     .benefits > .flex > img {
-        max-height: 100px;
+        max-height: auto;
     }
     .how > .flex {
         margin: 0 10px 20px;
+    }
+    .how > .flex > div > img {
+        height: 120px;
+        width: auto;
+    }
+    .puzzle-div.right > img {
+        margin-left: -16px;
+    }
+    .puzzle-div.left > img {
+        margin-right: -39px;
     }
     .number-one > p {
         font-size: 16px;
@@ -1580,7 +1638,7 @@ a {
     }
     .choose > div > div > h2 {
         font-size: 22px;
-        margin: 10px 0;
+        margin: 25px 0 10px;
     }
     .flex > .one > p, .flex > .two > p {
         font-size: 16px;
