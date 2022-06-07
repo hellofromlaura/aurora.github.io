@@ -40,7 +40,7 @@ a {
 .grey-bg {
     background-color: #e2e2e2;
 }
-.button {
+.btn {
     display: block;
     width: -moz-fit-content;
     width: fit-content;
@@ -528,9 +528,9 @@ a {
     padding-bottom: 15px;
 }
 .smaller > a {
-    padding-bottom: 5px;
+    color: #0D98BE !important;
     text-decoration: none;
-    border-bottom: 2px solid #424445;
+    font-weight: 400;
 }
 
 /* Footnotes */
@@ -994,7 +994,7 @@ a {
         margin: 45px auto 0px;
         font-size: 28px;
     }
-    .button {
+    .btn {
         margin: 40px auto 20px;
         padding: 20px 50px;
         font-size: 25px;
@@ -1180,7 +1180,7 @@ a {
     .outro > h3 {
         margin-bottom: 10px;
     }
-    .button {
+    .btn {
         font-size: 20px;
     }
 }
@@ -1399,7 +1399,7 @@ a {
     p {
         font-size: 18px;
     }
-    .button {
+    .btn {
         padding: 20px 40px;
         font-size: 18px;
     }
