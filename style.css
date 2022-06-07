@@ -11,7 +11,7 @@ body {
 }
 img {
     display: block;
-    width: 90%;
+    /* width: 90%; */
 }
 h1, h2, h3, h4 {
     font-weight: 300;
@@ -102,6 +102,7 @@ a {
     text-align: center;
 }
 .hero-image {
+    opacity: 0;
     width: 1200px;
     margin: 0 auto 100px;
 }
@@ -136,57 +137,57 @@ a {
     width: 23px;
     margin-top: -53px;
     margin-left: 45px;
-    animation : fall 0.94s linear 0.69s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.94s linear -0.69s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-1 > .rain > .rain-2 {
     width: 7px;
     margin-top: 30px;
     margin-left: 63px;
-    animation : fall 0.98s linear 0.57s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.98s linear 0.57s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-1 > .rain > .rain-3 {
     width: 20px;
     margin-top: -107px;
     margin-left: 122px;
-    animation : fall 0.66s linear .60s infinite;
-    animation-iteration-count: 7;
+    animation : fall 2.66s linear .60s infinite;
+    /* animation-iteration-count: 7; */
 }
 .hero-cloud-1 > .rain > .rain-4 {
     width: 25px;
     margin-top: -40px;
     margin-left: 182px;
-    animation : fall 0.69s linear .76s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.69s linear .76s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-1 > .rain > .rain-5 {
     width: 27px;
     margin-top: -38px;
     margin-left: 222px;
-    animation : fall 0.75s linear .56s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.75s linear .56s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-1 > .rain > .rain-6 {
     width: 23px;
     margin-top: -34px;
     margin-left: 242px;
-    animation : fall 0.75s linear .92s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.75s linear -.92s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-1 > .rain > .rain-7 {
     width: 26px;
     margin-top: -20px;
     margin-left: 300px;
-    animation : fall 0.92s linear .72s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.92s linear .72s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-1 > .rain > .rain-8 {
     width: 19px;
     margin-top: 5px;
     margin-left: 335px;
-    animation : fall 0.84s linear .99s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.84s linear .99s infinite;
+    /* animation-iteration-count: 5; */
 }
 /* hero cloud 2 */
 .contain.hero-cloud-2 {
@@ -206,58 +207,60 @@ a {
     width: 16px;
     margin-top: -12px;
     margin-left: 29px;
-    animation : fall .79s linear .53s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.79s linear -.53s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-2 > .rain > .rain-2 {
     width: 5px;
     margin-top: 20px;
     margin-left: 35px;
-    animation : fall .82s linear .97s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.82s linear .97s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-2 > .rain > .rain-9 {
     width: 17px;
     margin-top: -25px;
     margin-left: 41px;
-    animation : fall .75s linear .56s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.75s linear -.56s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-2 > .rain > .rain-10 {
     width: 19px;
     margin-top: -74px;
     margin-left: 76px;
-    animation : fall .60s linear .59s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.60s linear .59s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-2 > .rain > .rain-4 {
     width: 17px;
     margin-top: -46px;
     margin-left: 126px;
-    animation : fall .5s linear .5s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.5s linear -.5s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-2 > .rain > .rain-11 {
     width: 20px;
     margin-top: -54px;
     margin-left: 140px;
-    animation : fall .80s linear .63s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.80s linear .63s infinite;
+    /* animation-iteration-count: 5; */
 }
 .hero-cloud-2 > .rain > .rain-8 {
     width: 16px;
     margin-top: -26px;
     margin-left: 170px;
-    animation : fall .68s linear .75s infinite;
-    animation-iteration-count: 5;
+    animation : fall 2.68s linear .75s infinite;
+    /* animation-iteration-count: 5; */
 }
 @keyframes fall {
-	to {margin-top:150px; opacity:0;}
-}
-
-@keyframes mover {
-    0% { transform: translateY(1rem); }
-    100% { transform: translateY(2.6rem); }
+	0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
 }
 .check {
     position: relative;
@@ -368,6 +371,7 @@ a {
 }
 .intro > .flex.two > div > h2 {
     font-size: 100px;
+    margin: 0;
 }
 .intro > .flex.two > div > p {
     font-size: 26px;
@@ -381,6 +385,7 @@ a {
 .progress-circle-div > img {
     position: relative;
     max-width: 460px;
+    width: 90%;
     margin: 0 auto;
     z-index: 10;
 }
@@ -400,7 +405,7 @@ a {
     max-width: 1340px;
     margin: 20px auto;
     padding: 0 3%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .benefits > .flex > img {
@@ -411,17 +416,21 @@ a {
 .benefits > .flex > div {
     width: 55%;
 }
+.benefits > .flex > div > h3 {
+    margin: 0px;
+}
+.benefits > .flex > div > p {
+    margin: 10px 0 0;
+}
 
 /* How */
 .how > .flex {
     max-width: 1340px;
     margin: 0 auto 50px;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-.how > .flex > div {
-    margin: 0 30px;
 }
 .number-one.flex {
     align-items: center;
@@ -437,7 +446,9 @@ a {
 }
 .how > .flex > div > img {
     max-height: 390px;
+    width: 117%;
     margin: auto;
+    transform: scaleX(-1);
 }
 
 /* Choose */
@@ -456,6 +467,10 @@ a {
 }
 .choose > div > div > h2 {
     font-size: 46px;
+    margin-bottom: 25px;
+}
+.choose > div > div > p {
+    margin: 5px 0px 0px;
 }
 .choose > div {
     max-width: 1000px;
@@ -488,6 +503,7 @@ a {
 }
 .choose > .cloud > img {
     margin: auto;
+    width: 90%;
 }
 .cloud > p {
     margin-top: -100px;
@@ -509,6 +525,12 @@ a {
 }
 .outro > .smaller {
     font-size: 22px;
+    padding-bottom: 15px;
+}
+.smaller > a {
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid #424445;
 }
 
 /* Footnotes */
@@ -745,6 +767,7 @@ a {
     .choose > div,
     .choose > img {
         max-width: 868px;
+        width: 90%;
     }
     .choose > .flex.two {
         margin-top: -500px;
@@ -787,15 +810,14 @@ a {
     }
     .hero-image {
         width: 650px;
-    }    .hero-clouds {
-        /* opacity: 0.5; */
+        margin: 0 auto;
     }
     .hero-over {
         width: 650px;
-        margin: -306px auto 0px;
+        margin: -206px auto 0px;
     }
     .contain.hero-cloud-1 {
-        margin-top: -493px;
+        margin-top: -393px;
         margin-left: 116px;
     }
     .hero-clouds {
@@ -837,15 +859,14 @@ a {
     .hero-cloud-1 > .rain > .rain-8 {
         width: 11px;
         margin-left: 259px;
-        margin-top: -20px;
+        margin-top: -22px;
     }
     .contain.hero-cloud-2 {
-        margin-top: -502px;
+        margin-top: -402px;
         margin-left: 465px;
     }
     .hero-cloud {
         width: 119px;
-        /* opacity: 0.5; */
     }
     .hero-cloud-2 > .rain {
         margin-top: 2px;
@@ -885,12 +906,12 @@ a {
     }
     .check {
         width: 35px;
-        bottom: 280px;
+        bottom: 180px;
         left: 435px;
     }
     .chat-message-content {
         width: 30px;
-        bottom: 319px;
+        bottom: 219px;
         left: 137px;
     }
     :root {
@@ -996,14 +1017,109 @@ a {
     .hero-image {
         width: 500px;
     }
+    .hero-over {
+        width: 500px;
+        margin: -159px auto 0px;
+    }
+    .contain.hero-cloud-1 {
+        margin-top: -301px;
+        margin-left: 96px;
+    }
+    .hero-clouds {
+        width: 169px;
+    }
+    .hero-cloud-1 > .rain {
+        margin-top: -3px;
+        margin-left: -97px;
+    }
+    .hero-cloud-1 > .rain > .rain-1 {
+        width: 9px;
+        margin-left: 114px;
+        margin-top: -38px;
+    }
+    .hero-cloud-1 > .rain > .rain-2 {
+        width: 4px;
+        margin-top: -19px;
+        margin-left: 124px;
+    }
+    .hero-cloud-1 > .rain > .rain-3 {
+        width: 8px;
+        margin-top: -72px;
+        margin-left: 146px;
+    }
+    .hero-cloud-1 > .rain > .rain-4 {
+        width: 11px;
+        margin-left: 171px;
+    }
+    .hero-cloud-1 > .rain > .rain-5 {
+        width: 11px;
+        margin-left: 188px;
+    }
+    .hero-cloud-1 > .rain > .rain-6 {
+        width: 9px;
+        margin-left: 198px;
+    }
+    .hero-cloud-1 > .rain > .rain-7 {
+        width: 11px;
+        margin-left: 222px;
+        margin-top: -32px;
+    }
+    .hero-cloud-1 > .rain > .rain-8 {
+        width: 9px;
+        margin-left: 237px;
+        margin-top: -26px;
+    }
+    .contain.hero-cloud-2 {
+        margin-top: -309px;
+        margin-left: 364px;
+    }
+    .hero-cloud {
+        width: 90px;
+    }
+    .hero-cloud-2 > .rain {
+        margin-top: 3px;
+        margin-left: -36px;
+    }
+    .hero-cloud-2 > .rain > .rain-1 {
+        width: 6px;
+        margin-top: -21px;
+        margin-left: 47px;
+    }
+    .hero-cloud-2 > .rain > .rain-2 {
+        width: 2px;
+        margin-left: 44px;
+    }
+    .hero-cloud-2 > .rain > .rain-9 {
+        width: 7px;
+        margin-left: 53px;
+    }
+    .hero-cloud-2 > .rain > .rain-10 {
+        width: 8px;
+        margin-top: -45px;
+        margin-left: 66px;    
+    }
+    .hero-cloud-2 > .rain > .rain-4 {
+        width: 8px;
+        margin-left: 86px;
+    }
+    .hero-cloud-2 > .rain > .rain-11 {
+        width: 9px;
+        margin-left: 93px;
+        margin-top: -37px;
+    }
+    .hero-cloud-2 > .rain > .rain-8 {
+        width: 7px;
+        margin-top: -26px;
+        margin-left: 106px;
+    }
     .check {
         width: 30px;
-        bottom: 240px;
+        bottom: 140px;
         left: 340px;
     }
     .chat-message-content {
         width: 30px;
-        bottom: 277px;
+        bottom: 177px;
         left: 110px;
     }
     :root {
@@ -1018,13 +1134,17 @@ a {
         flex-direction: column-reverse;
     }
     .intro-text,
-    .intro > .flex > img,
-    .intro > .flex > .progress-circle-div {
+    .intro > .flex > img {
         width: 70%;
         margin-right: 0px;
     }
     .intro > .flex > .progress-circle-div {
+        width: 300px;
         height: 340px;
+    }
+    .progress-circle-div > img {
+        width: 340px;
+        margin: 0 0 0 20px;
     }
     .intro > .flex > div {
         margin-top: 20px;
@@ -1063,7 +1183,6 @@ a {
     .button {
         font-size: 20px;
     }
-    
 }
 
 @media only screen and (max-width: 596px) {
@@ -1083,27 +1202,121 @@ a {
         padding: 20px 50px 20px 100px;
     }
     .hero {
-        width: 400px;
+        width: 470px;
     }
     .hero-image {
-        width: 350px;
+        width: 470px;
+        /* opacity: 1; */
+    }
+    .hero-over {
+        width: 470px;
+        margin: -150px auto 0px;
+    }
+    .contain.hero-cloud-1 {
+        margin-top: -285px;
+        margin-left: 66px;
+    }
+    .hero-clouds {
+        width: 161px;
+    }
+    .hero-cloud-1 > .rain {
+        margin-top: -3px;
+        margin-left: -100px;
+    }
+    .hero-cloud-1 > .rain > .rain-1 {
+        width: 8px;
+        margin-left: 131px;
+        margin-top: -34px;
+    }
+    .hero-cloud-1 > .rain > .rain-2 {
+        width: 4px;
+    }
+    .hero-cloud-1 > .rain > .rain-3 {
+        width: 8px;
+        margin-top: -50px;
+        margin-left: 155px;
+    }
+    .hero-cloud-1 > .rain > .rain-4 {
+        width: 9px;
+    }
+    .hero-cloud-1 > .rain > .rain-5 {
+        width: 10px;
+        margin-left: 183px;
+    }
+    .hero-cloud-1 > .rain > .rain-6 {
+        width: 8px;
+        margin-left: 189px;
+        margin-top: -27px;
+    }
+    .hero-cloud-1 > .rain > .rain-7 {
+        width: 9px;
+        margin-left: 208px;
+        margin-top: -26px;
+    }
+    .hero-cloud-1 > .rain > .rain-8 {
+        width: 8px;
+        margin-left: 219px;
+        margin-top: -19px;
+    }
+    .contain.hero-cloud-2 {
+        margin-top: -290px;
+        margin-left: 318px;
+    }
+    .hero-cloud {
+        width: 86px;
+    }
+    .hero-cloud-2 > .rain {
+        margin-top: 3px;
+        margin-left: -38px;
+    }
+    .hero-cloud-2 > .rain > .rain-1 {
+        width: 7px;
+        margin-top: -18px;
+        margin-left: 53px;
+    }
+    .hero-cloud-2 > .rain > .rain-2 {
+        margin-left: 53px;
+    }
+    .hero-cloud-2 > .rain > .rain-9 {
+        width: 8px;
+        margin-left: 57px;
+    }
+    .hero-cloud-2 > .rain > .rain-10 {
+        width: 8px;
+        margin-top: -33px;
+        margin-left: 69px;
+    }
+    .hero-cloud-2 > .rain > .rain-4 {
+        width: 7px;
+        margin-left: 82px;
+        margin-top: -30px;
+    }
+    .hero-cloud-2 > .rain > .rain-11 {
+        width: 8px;
+        margin-left: 88px;
+        margin-top: -24px;
+    }
+    .hero-cloud-2 > .rain > .rain-8 {
+        width: 7px;
+        margin-top: -20px;
+        margin-left: 97px;
     }
     .check {
         width: 25px;
-        bottom: 200px;
-        left: 247px;
+        bottom: 100px;
+        left: 265px;
     }
     .chat-message-content {
         width: 30px;
-        bottom: 239px;
-        left: 86px;
+        bottom: 139px;
+        left: 110px;
     }
     :root {
         --loader-size: 0.25rem;
         --loader-spacing: 0.1rem;
     }
     .hero > h1 {
-        max-width: 450px;
+        max-width: 400px;
         font-size: 40px;
     }
     .intro > .flex.two > div > p {
@@ -1111,9 +1324,6 @@ a {
     }
     .intro > .flex > div {
         padding: 0;
-    }
-    .progress-circle-div > img {
-        margin: 62px 0px 0px 45px;
     }
     .quote {
         font-size: 25px;
@@ -1196,13 +1406,129 @@ a {
     .side-title.left {
         margin: 0px 0px 30px -80px;
     }
+    .hero {
+        width: 360px;
+    }
+    .hero-image {
+        width: 350px;
+    }
+    .hero-over {
+        width: 350px;
+        margin: -112px auto 0px;
+    }
+    .contain.hero-cloud-1 {
+        margin-top: -211px;
+        margin-left: 100px;
+    }
+    .hero-clouds {
+        width: 120px;
+    }
+    .hero-cloud-1 > .rain {
+        margin-top: -3px;
+        margin-left: -121px;
+    }
+    .hero-cloud-1 > .rain > .rain-1 {
+        width: 6px;
+        margin-left: 131px;
+        margin-top: -34px;
+    }
+    .hero-cloud-1 > .rain > .rain-2 {
+        width: 3px;
+    }
+    .hero-cloud-1 > .rain > .rain-3 {
+        width: 6px;
+        margin-top: -50px;
+        margin-left: 155px;
+    }
+    .hero-cloud-1 > .rain > .rain-4 {
+        width: 7px;
+    }
+    .hero-cloud-1 > .rain > .rain-5 {
+        width: 8px;
+        margin-left: 183px;
+    }
+    .hero-cloud-1 > .rain > .rain-6 {
+        width: 6px;
+        margin-left: 189px;
+        margin-top: -27px;
+    }
+    .hero-cloud-1 > .rain > .rain-7 {
+        width: 7px;
+        margin-left: 208px;
+        margin-top: -26px;
+    }
+    .hero-cloud-1 > .rain > .rain-8 {
+        width: 6px;
+        margin-left: 219px;
+        margin-top: -19px;
+    }
+    .contain.hero-cloud-2 {
+        margin-top: -217px;
+        margin-left: 287px;
+    }
+    .hero-cloud {
+        width: 64px;
+    }
+    .hero-cloud-2 > .rain {
+        margin-top: 3px;
+        margin-left: -46px;
+    }
+    .hero-cloud-2 > .rain > .rain-1 {
+        width: 5px;
+        margin-top: -18px;
+        margin-left: 53px;
+    }
+    .hero-cloud-2 > .rain > .rain-2 {
+        margin-left: 53px;
+    }
+    .hero-cloud-2 > .rain > .rain-9 {
+        width: 6px;
+        margin-left: 57px;
+    }
+    .hero-cloud-2 > .rain > .rain-10 {
+        width: 6px;
+        margin-top: -33px;
+        margin-left: 69px;
+    }
+    .hero-cloud-2 > .rain > .rain-4 {
+        width: 5px;
+        margin-left: 82px;
+        margin-top: -30px;
+    }
+    .hero-cloud-2 > .rain > .rain-11 {
+        width: 6px;
+        margin-left: 88px;
+        margin-top: -24px;
+    }
+    .hero-cloud-2 > .rain > .rain-8 {
+        width: 5px;
+        margin-top: -20px;
+        margin-left: 97px;
+    }
+    
+    
     .hero > h1 {
         max-width: 350px;
         margin: 60px auto 40px;
         font-size: 35px;
     }
-    .hero > img {
-        margin: 0 auto 60px;
+    .contain.hero-cloud-1 {
+        margin-left: 54px;
+    }
+    .contain.hero-cloud-2 {
+        margin-left: 262px;
+        margin-left: 242px;
+    }
+    .hero-cloud-2 > .rain {
+        margin-top: 3px;
+        margin-left: -46px;
+    }
+    .check {
+        left: 222px;
+    }
+    .chat-message-content {
+        bottom: 136px;
+        left: 65px;
     }
     .intro > .flex > div {
         padding: 0 40px;
