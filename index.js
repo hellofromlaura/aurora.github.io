@@ -48,7 +48,8 @@ const juggle = document.querySelector('#animate-juggle')
 document.addEventListener('scroll', function () {
   if (isInViewport(juggle) && juggle.classList.value ==('') ) {
     let img = new Image();
-    img.src = './images/Juggler_v4.gif'
+    // img.src = './images/Juggler_alpha.gif'
+    img.src = './images/Juggler_white.gif'
     img.className = 'gif'
     juggle.prepend(img);
     juggle.classList.add('hasGif');

@@ -360,6 +360,9 @@ a {
     justify-content: space-around;
     align-items: center;
 }
+.intro > .flex.one {
+    max-width: 90%;
+}
 .intro > .flex.one > div > h2 {
     margin: 40px 0 0;
     font-size: 65px;
@@ -369,20 +372,17 @@ a {
     font-size: 22px;
 }
 .intro-text {
-    width: 40%;
-    margin-right: 50px;
+    width: 30%;
 }
 .intro > .flex > img {
     width: 60%;
     margin-right: 50px;
 }
 #animate-juggle {
-    width: 518px;
-    height: 600px;
-    padding-bottom: 40px;
+    width: 70%;
 }
 .gif {
-    width: 600px;
+    width: 100%;
     margin: auto;
 }
 .quote {
@@ -694,9 +694,6 @@ a {
         --loader-size: 0.6rem;
         --loader-spacing: 0.4rem;
     }
-    #animate-juggle {
-        height: 466px;
-    }
     .how > .flex > div > img {
         height: 340px;
     }
@@ -838,10 +835,6 @@ a {
     }
     .cloud > p {
         margin-top: -90px;
-    }
-    #animate-juggle {
-        width: 510px;
-        height: 461px;
     }
     .how > .flex > div > img {
         height: 330px;
@@ -1001,17 +994,12 @@ a {
         width: 50%;
     }
     #container {
-        margin: 50px 0 -295px 2px;
+        margin: 50px 0 -295px 4px;
         width: 270px;
-        height: 270px;
+        height: 262px;
     }
     #animate-stats2 {
         height: 450px;
-    }
-    #animate-juggle {
-        width: 350px;
-        height: 315px;
-        padding-bottom: 0px;
     }
     .progress-circle-div > img {
         max-width: 360px;
@@ -1021,14 +1009,19 @@ a {
         font-size: 50px;
     }
     .intro > .flex {
-        margin: 40px auto 50px;
+        flex-direction: column;
+        margin: 40px auto 100px;
+    }
+    #animate-juggle {
+        width: 100%;
+    }
+    .intro-text {
+        width: 90%;
+        text-align: center;
     }
     .intro > .flex.two > div > h2 {
         font-size: 70px;
         margin: 10px 0px;
-    }
-    .intro > .flex > div {
-        padding-bottom: 0px;
     }
     .benefits > img {
         width: 50%;
@@ -1236,7 +1229,7 @@ a {
     }
     .progress-circle-div > img {
         width: 340px;
-        margin: 0 0 0 20px;
+        margin: 8px 0 0 20px;
     }
     .intro > .flex > div {
         margin-top: 0px;
@@ -1245,10 +1238,6 @@ a {
     }
     .intro-text {
         width: 430px;
-    }
-    #animate-juggle {
-        width: 530px;
-        height: 466px;
     }
     #container {
         margin: 50px 0 -318px 14px;
@@ -1436,10 +1425,6 @@ a {
     }
     .intro > .flex > div {
         padding: 0;
-    }
-    #animate-juggle {
-        width: 450px;
-        height: 405px;
     }
     .quote {
         font-size: 25px;
