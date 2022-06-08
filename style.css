@@ -590,6 +590,14 @@ a {
     .hero-clouds {
         width: 343px;
     }
+    .data-rain-1 {
+        width: 261px;
+        margin: -43px 0 0 38px;
+    }
+    .data-rain-2 {
+        width: 132px;
+        margin: -9px 0 0 26px;
+    }
     .contain.hero-cloud-1 {
         margin-top: -704px;
         margin-left: 190px;
@@ -717,6 +725,14 @@ a {
     }
     .hero-clouds {
         width: 308px;
+    }
+    .data-rain-1 {
+        width: 234px;
+        margin: -38px 0 0 35px;
+    }
+    .data-rain-2 {
+        width: 119px;
+        margin: -9px 0 0 23px;
     }
     .hero-cloud-1 > .rain {
         margin-top: -37px;
@@ -877,6 +893,14 @@ a {
     }
     .hero-clouds {
         width: 222px;
+    }    
+    .data-rain-1 {
+        width: 170px;
+        margin: -27px 0 0 25px;
+    }
+    .data-rain-2 {
+        width: 86px;
+        margin: -6px 0 0 16px;
     }
     .hero-cloud-1 > .rain {
         margin-top: -15px;
@@ -1092,6 +1116,14 @@ a {
     .hero-clouds {
         width: 169px;
     }
+    .data-rain-1 {
+        width: 131px;
+        margin: -22px 0 0 18px;
+    }
+    .data-rain-2 {
+        width: 66px;
+        margin: -4px 0 0 12px;
+    }
     .hero-cloud-1 > .rain {
         margin-top: -3px;
         margin-left: -97px;
@@ -1279,7 +1311,6 @@ a {
     }
     .hero-image {
         width: 470px;
-        /* opacity: 1; */
     }
     .hero-over {
         width: 470px;
@@ -1291,6 +1322,14 @@ a {
     }
     .hero-clouds {
         width: 161px;
+    }
+    .data-rain-1 {
+        width: 123px;
+        margin: -20px 0 0 18px;
+    }
+    .data-rain-2 {
+        width: 62px;
+        margin: -3px 0 0 12px;
     }
     .hero-cloud-1 > .rain {
         margin-top: -3px;
@@ -1400,6 +1439,7 @@ a {
     }
     #animate-juggle {
         width: 450px;
+        height: 405px;
     }
     .quote {
         font-size: 25px;
@@ -1508,6 +1548,13 @@ a {
     }
     .hero-clouds {
         width: 120px;
+    }
+    .data-rain-1 {
+        width: 92px;
+        margin: -15px 0 0 13px;
+    }
+    .data-rain-2 {
+        width: 46px;
     }
     .hero-cloud-1 > .rain {
         margin-top: -3px;
@@ -1630,6 +1677,7 @@ a {
     }
     #animate-juggle{
         width: 285px;
+        height: 256px;
     }
     .side-title {
         font-size: 22px;
