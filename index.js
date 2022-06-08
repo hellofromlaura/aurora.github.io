@@ -29,7 +29,6 @@ function isInViewport(el) {
         rect.left >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-
     );
 }
 
@@ -43,18 +42,19 @@ var bar = new ProgressBar.Circle(container, {
     svgStyle: null
 });
 
-const box1 = document.querySelector('#animate-stats1');
 const box2 = document.querySelector('#animate-stats2');
+const juggle = document.querySelector('#animate-juggle')
 
 document.addEventListener('scroll', function () {
-    if (isInViewport(box1) && document.querySelector('#nbr1').innerHTML == 0 ) {
-        // counterAnimation(document.querySelector('#nbr1'), 0, 95, 10);
-        // counterAnimation(document.querySelector('#nbr2'), 0, 200, 5);
-        // counterAnimation(document.querySelector('#nbr3'), 0, 2.4, 200);
-    }
-    // if (isInViewport(box2) && document.querySelector('#nbr4').innerHTML == 0 ) {
+  console.log(juggle.classList)
+      if (isInViewport(juggle) && juggle.classList.value ==('') ) {
+        let img = new Image();
+        img.src = './images/Juggler_v4.gif'
+        img.className = 'gif'
+        juggle.prepend(img);
+        juggle.classList.add('hasGif');
+      }
       if (isInViewport(box2)) {
-        // counterAnimation(document.querySelector('#nbr4'), 0, 60, 20);
         bar.animate(0.6);  // Number from 0.0 to 1.0
     }
 });
