@@ -403,7 +403,7 @@ a {
 }
 #container {
     position: relative;
-    margin: 0 0 -430px 12px;
+    margin: 0 0 -389px -13px;
     width: 383px;
     height: 383px;
 }
@@ -998,7 +998,8 @@ a {
         height: 262px;
     }
     #animate-stats2 {
-        height: 450px;
+        flex-direction: column-reverse;
+        height: 550px;
     }
     .progress-circle-div > img {
         max-width: 360px;
