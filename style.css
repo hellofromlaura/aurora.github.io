@@ -382,8 +382,7 @@ a {
     width: 70%;
 }
 .gif {
-    width: 100%;
-    margin: auto;
+    width: 90%;
 }
 .quote {
     margin: 0px 0px 60px;
@@ -1014,6 +1013,10 @@ a {
     }
     #animate-juggle {
         width: 100%;
+    }
+    .gif {
+        width: 100%;
+        margin: auto;
     }
     .intro-text {
         width: 90%;
