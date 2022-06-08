@@ -48,11 +48,13 @@ const juggle = document.querySelector('#animate-juggle')
 document.addEventListener('scroll', function () {
   if (isInViewport(juggle) && juggle.classList.value ==('') ) {
     let img = new Image();
-    // img.src = './images/Juggler_alpha.gif'
-    img.src = './images/Juggler_white.gif'
-    img.className = 'gif'
-    juggle.prepend(img);
+    img.src = './images/Juggler_white.gif';
+    img.className = 'gif';
     juggle.classList.add('hasGif');
+    setTimeout(()=> {
+      juggle.prepend(img);
+    }, 50)
+    
   }
   if (isInViewport(box2)) {
     bar.animate(0.6);  // Number from 0.0 to 1.0
