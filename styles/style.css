@@ -53,6 +53,10 @@ a.btn {
     text-decoration: none;
     text-align: center;
 }
+a[href].btn:hover, a[href].btn:active {
+    color: #fff;
+    text-decoration: none;
+}
 .main-container {
     max-width: 1600px;
     box-sizing: border-box;
