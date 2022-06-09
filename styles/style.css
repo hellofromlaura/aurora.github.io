@@ -291,16 +291,17 @@ a.btn {
     left: 820px;
 }
 .chat-message-content {
+    display: block;
 	position: relative;
     width: -moz-fit-content;
     width: fit-content;
     z-index: 0;
-    bottom: 465px;
-    left: 279px;
+    bottom: 446px;
+    left: 280px;
 }
 :root {
-	--loader-size: 0.7rem;
-	--loader-spacing: 0.5rem;
+	--loader-size: 1.1rem;
+	--loader-spacing: 0.8rem;
 	--loader-background: rgba(0, 0, 0, .1);
 	--loader-background-active: #0D274D;
 	--loader-animation-duration: 1.2s;
@@ -686,12 +687,12 @@ a.btn {
     }
     .chat-message-content {
         width: 55px;
-        bottom: 410px;
+        bottom: 390px;
         left: 224px;
     }
     :root {
-        --loader-size: 0.6rem;
-        --loader-spacing: 0.4rem;
+        --loader-size: 1rem;
+        --loader-spacing: 0.7rem;
     }
     .how > .flex > div > img {
         height: 340px;
@@ -814,7 +815,7 @@ a.btn {
     }
     .chat-message-content {
         width: 55px;
-        bottom: 385px;
+        bottom: 363px;
         left: 203px;
     }
     .outro,
@@ -981,13 +982,13 @@ a.btn {
         left: 435px;
     }
     .chat-message-content {
-        width: 30px;
-        bottom: 219px;
-        left: 137px;
+        width: 55px;
+        bottom: 202px;
+        left: 224px;
     }
     :root {
-        --loader-size: 0.45rem;
-        --loader-spacing: 0.25rem;
+        --loader-size: 0.7rem;
+        --loader-spacing: 0.5rem;
     }
     .intro > .flex > img {
         width: 50%;
@@ -1212,12 +1213,12 @@ a.btn {
     }
     .chat-message-content {
         width: 30px;
-        bottom: 177px;
-        left: 110px;
+        bottom: 162px;
+        left: 112px;
     }
     :root {
-        --loader-size: 0.4rem;
-        --loader-spacing: 0.2rem;
+        --loader-size: 0.5rem;
+        --loader-spacing: 0.3rem;
     }
     .intro > .flex {
         margin: 40px auto 70px;
@@ -1413,12 +1414,12 @@ a.btn {
     }
     .chat-message-content {
         width: 30px;
-        bottom: 139px;
-        left: 110px;
+        bottom: 151px;
+        left: 83px;    
     }
     :root {
-        --loader-size: 0.25rem;
-        --loader-spacing: 0.1rem;
+        --loader-size: 0.4rem;
+        --loader-spacing: 0.3rem;
     }
     .hero > h1 {
         max-width: 400px;
@@ -1647,8 +1648,12 @@ a.btn {
         left: 222px;
     }
     .chat-message-content {
-        bottom: 136px;
+        bottom: 122px;
         left: 65px;
+    }
+    :root {
+        --loader-size: 0.4rem;
+        --loader-spacing: 0.2rem;
     }
     .intro > .flex > div {
         padding: 0 40px;
