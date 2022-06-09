@@ -40,7 +40,7 @@ a {
 .grey-bg {
     background-color: #e2e2e2;
 }
-.btn {
+a.btn {
     display: block;
     width: -moz-fit-content;
     width: fit-content;

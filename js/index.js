@@ -48,7 +48,7 @@ const juggle = document.querySelector('#animate-juggle')
 document.addEventListener('scroll', function () {
   if (isInViewport(juggle) && juggle.classList.value ==('') ) {
     let img = new Image();
-    img.src = './images/Juggler_white.gif';
+    img.src = 'c/dam/m/en_us/solutions/enterprise-networks/nb-06-cloud-managed-catalyst/images/Juggler_white.gif';
     img.className = 'gif';
     juggle.classList.add('hasGif');
     setTimeout(()=> {
