@@ -53,7 +53,7 @@ a.btn {
     text-decoration: none;
     text-align: center;
 }
-a[href].btn:hover, a[href].btn:active {
+a[href].btn:hover, a[href].btn:active, a.btn[href]:visited {
     color: #fff;
     text-decoration: none;
 }
